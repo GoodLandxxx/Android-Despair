@@ -18,9 +18,13 @@
         <activity
             android:name=".Login"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".MainActivity"
-            android:theme="@style/apptheme"/>
-        <activity android:name=".service"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/apptheme" />
+        <activity android:name=".service" />
+        <activity android:name=".HotActivity" />
+        <activity android:name=".ContactActivity" />
+        <activity android:name=".MyselfActivity"></activity>
     </application>
 
 </manifest>
