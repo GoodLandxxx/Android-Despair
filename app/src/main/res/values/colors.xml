@@ -77,7 +77,7 @@
     <color name="primary_light">#ffd7ccc8</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
     <color name="primary_material_light">@color/material_grey_100</color>
-    <color name="primary_text_default_material_dark">#ffffffff</color>
+    <color name="white">#ffffffff</color>
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>

@@ -7,7 +7,9 @@
     android:background="@color/gray"
     android:orientation="vertical"
     >
-<include layout="@layout/activity_bar_tittle_text"></include>
+
+    <include layout="@layout/activity_bar_tittle_text"></include>
+
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
@@ -18,7 +20,7 @@
             android:layout_height="50.0dip"
             android:layout_marginTop="50.0dip"
             android:background="@color/white1"
-            android:hint="登录"
+            android:hint="@string/login_login1"
             android:inputType="none"
             android:maxLength="8"
             android:padding="15.0dip"
@@ -30,8 +32,9 @@
             android:layout_height="50.0dip"
             android:layout_marginTop="2.0dip"
             android:background="@color/white1"
-            android:hint="密码"
-            android:inputType="textPassword"
+            android:hint="@string/login_password"
+            android:inputType="numberPassword"
+
             android:maxLength="16"
             android:padding="15.0dip"
             android:textColorHint="@color/txt_light_gray" />
@@ -46,22 +49,23 @@
                     android:layout_height="fill_parent"
                     android:layout_gravity="right"
                     android:checked="true"
-                    android:linksClickable="true" />
+                    android:linksClickable="true"
+                    tools:ignore="RtlHardcoded" />
 
                 <TextView
                     android:id="@+id/service_button"
                     android:clickable="true"
-                    android:text="服务条款" />
+                    android:text="@string/login_fuwu" />
             </TableRow>
         </TableLayout>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35.0dip"
-            android:layout_marginRight="35.0dip"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginRight="@dimen/button_margin"
             android:layout_marginTop="35.0dip"
-            android:background="@drawable/shape"
+            android:background="@drawable/shape_one"
             android:text="@string/login_"
             android:textColor="@color/white1"
             android:textSize="25.0sp" />
@@ -69,19 +73,23 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="35.0dip"
-            android:layout_marginLeft="35.0dip"
-            android:layout_marginRight="35.0dip"
+            android:layout_marginBottom="@dimen/button_margin"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginRight="@dimen/button_margin"
             android:layout_marginTop="15.0dip"
-            android:background="@drawable/shapee"
-            android:text="注册"
+            android:background="@drawable/shape_two"
+            android:text="@string/login_sign"
             android:textColor="@color/txt_light_gray"
             android:textSize="25.0sp" />
     </TableLayout>
+
     <TextView
         android:id="@+id/lookaround"
-        android:text="随便看看"
-        android:gravity="center_horizontal"
+        android:text="@string/lookaround"
+        android:textSize="20sp"
+        android:typeface="serif"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:visibility="visible"/>
 </LinearLayout>

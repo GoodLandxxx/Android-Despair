@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Despair</string>
     <string name="login_">登录</string>
+    <string name="login_password">密码</string>
+    <string name="login_fuwu">服务条款</string>
+    <string name="login_sign">注册</string>
+    <string name="login_login1">登录</string>
+    <string name="lookaround">随便看看</string>
 </resources>

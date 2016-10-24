@@ -1,13 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="jordan.despair.com.despair.MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
-</RelativeLayout>
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white1"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_bar_tittle_text" />
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_gravity="top"
+        android:background="#fffafafa"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_bbs"
+            style="@style/RadioButtonBottomTab"
+            android:drawableTop="@drawable/icon_"
+            android:text="BBS" />
+        <RadioButton
+            android:id="@+id/rb_new"
+            style="@style/RadioButtonBottomTab"
+            android:checked="true"
+            android:drawableTop="@drawable/icon_"
+            android:text="热门" />
+
+
+
+        <RadioButton
+            android:id="@+id/rb_contact"
+            style="@style/RadioButtonBottomTab"
+            android:drawableTop="@drawable/icon_"
+            android:text="联系人" />
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            style="@style/RadioButtonBottomTab"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/icon_"
+            android:text="我" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_gray" />
+</LinearLayout>

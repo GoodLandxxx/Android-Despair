@@ -3,13 +3,11 @@ package jordan.despair.com.despair;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import jordan.despair.com.despair.tool.Activitytool;
-
-public class MainActivity extends Activitytool {
+public class service extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_service);
     }
 }

@@ -7,9 +7,10 @@ import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
+
 import jordan.despair.com.despair.tool.Activitytool;
 
-public class background extends AppCompatActivity {
+public class background extends Activitytool {
     private static final int WHAT_INTENT2LOGIN = 1;
     private static final int WHAT_INTENT2MAIN = 2;
     private static final long SPLASH_DUR_TIME = 1500;
@@ -21,11 +22,12 @@ public class background extends AppCompatActivity {
 
             switch (msg.what) {
                 case WHAT_INTENT2LOGIN:
-                    startActivity(new Intent(background.this,Login.class));
+                    StartAct(Login.class);
+//                    startActivity(new Intent(background.this,Login.class));
                     finish();
                     break;
                 case WHAT_INTENT2MAIN:
-                    startActivity(new Intent(background.this,MainActivity.class));
+                    StartAct(MainActivity.class);
                     finish();
                     break;
                 default:
