@@ -7,7 +7,7 @@
     android:background="@color/gray"
     android:orientation="vertical"
     >
-
+<include layout="@layout/activity_bar_tittle_text"></include>
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
