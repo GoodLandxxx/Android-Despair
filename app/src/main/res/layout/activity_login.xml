@@ -79,6 +79,7 @@
             android:textSize="25.0sp" />
     </TableLayout>
     <TextView
+        android:id="@+id/lookaround"
         android:text="随便看看"
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
