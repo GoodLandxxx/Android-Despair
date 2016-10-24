@@ -13,14 +13,19 @@
         <item name="windowActionBar">true</item>
         <item name="android:windowFullscreen">true</item>
     </style>
-
+    <style name="apptheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
     <style name="RadioButtonBottomTab">
         <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">@drawable/textcolor_style_sel</item>
         <item name="android:gravity">center</item>
-        <item name="android:background">@color/white1</item>
+        <item name="android:background">@color/gray_dark</item>
         <item name="android:layout_width">0.0dip</item>
         <item name="android:button">@null</item>
+
         <item name="android:layout_weight">1.0</item>
     </style>
 </resources>

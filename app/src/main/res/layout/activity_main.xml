@@ -19,20 +19,20 @@
         android:layout_width="fill_parent"
         android:layout_height="50.0dip"
         android:layout_gravity="top"
-        android:background="#fffafafa"
+        android:background="@color/gray_dark"
         android:gravity="center_vertical"
         android:orientation="horizontal">
         <RadioButton
             android:id="@+id/rb_bbs"
             style="@style/RadioButtonBottomTab"
             android:drawableTop="@drawable/icon_"
-            android:text="BBS" />
+            android:text="@string/bbs" />
         <RadioButton
             android:id="@+id/rb_new"
             style="@style/RadioButtonBottomTab"
             android:checked="true"
             android:drawableTop="@drawable/icon_"
-            android:text="热门" />
+            android:text="@string/hot" />
 
 
 
@@ -40,14 +40,14 @@
             android:id="@+id/rb_contact"
             style="@style/RadioButtonBottomTab"
             android:drawableTop="@drawable/icon_"
-            android:text="联系人" />
+            android:text="@string/contact" />
 
         <RadioButton
             android:id="@+id/rb_user"
             style="@style/RadioButtonBottomTab"
             android:layout_height="wrap_content"
             android:drawableTop="@drawable/icon_"
-            android:text="我" />
+            android:text="@string/myself" />
     </RadioGroup>
 
     <View

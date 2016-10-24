@@ -6,4 +6,8 @@
     <string name="login_sign">注册</string>
     <string name="login_login1">登录</string>
     <string name="lookaround">随便看看</string>
+    <string name="bbs">BBS</string>
+    <string name="hot">热门</string>
+    <string name="contact">联系人</string>
+    <string name="myself">我</string>
 </resources>

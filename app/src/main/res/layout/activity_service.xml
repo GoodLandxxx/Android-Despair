@@ -5,5 +5,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="jordan.despair.com.despair.service">
-
+    <include layout="@layout/activity_bar_tittle_text"></include>
 </RelativeLayout>

@@ -18,8 +18,9 @@ public class Login extends Activitytool implements View.OnClickListener {
         TextView textView = (TextView) findViewById(R.id.title_text);
         textView.setText("登录");
         TextView lookaroud = (TextView) findViewById(R.id.lookaround);
-        lookaroud.setOnClickListener(this);
         TextView service = (TextView) findViewById(R.id.service_button);
+        lookaroud.setOnClickListener(this);
+        service.setOnClickListener(this);
 
     }
 
