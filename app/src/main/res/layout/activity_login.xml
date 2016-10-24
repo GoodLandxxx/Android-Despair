@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="50.0dip"
+            android:background="@color/white1"
+            android:hint="登录"
+            android:inputType="none"
+            android:maxLength="8"
+            android:padding="15.0dip"
+            android:textColorHint="@color/txt_light_gray" />
+
+        <EditText
+            android:id="@+id/_password"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="2.0dip"
+            android:background="@color/white1"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:padding="15.0dip"
+            android:textColorHint="@color/txt_light_gray" />
+
+        <TableLayout>
+
+            <TableRow android:layout_marginTop="10.0dip"
+                tools:ignore="UselessParent">
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right"
+                    android:checked="true"
+                    android:linksClickable="true" />
+
+                <TextView
+                    android:id="@+id/service_button"
+                    android:clickable="true"
+                    android:text="服务条款" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:layout_marginRight="35.0dip"
+            android:layout_marginTop="35.0dip"
+            android:background="@drawable/shape"
+            android:text="@string/login_"
+            android:textColor="@color/white1"
+            android:textSize="25.0sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35.0dip"
+            android:layout_marginLeft="35.0dip"
+            android:layout_marginRight="35.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/shapee"
+            android:text="注册"
+            android:textColor="@color/txt_light_gray"
+            android:textSize="25.0sp" />
+    </TableLayout>
+    <TextView
+        android:text="随便看看"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
