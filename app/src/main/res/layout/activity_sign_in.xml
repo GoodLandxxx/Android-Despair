@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_agray"
+    tools:context="jordan.despair.com.despair.sign_in">
+
+    <include layout="@layout/activity_bar_tittle_text"></include>
+
+    <TableLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/sign_name"
+                android:layout_width="match_parent"
+                android:layout_height="50.0dip"
+                android:background="@color/white1"
+                android:hint="帐号"
+                android:inputType="none"
+                android:maxLength="8"
+                android:layout_margin="10dp"
+                android:padding ="15dp"
+                android:textColorHint="@color/txt_light_gray"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+
+
+        <EditText
+            android:id="@+id/sign_password"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_margin="10dp"
+            android:background="@color/white1"
+            android:hint="@string/login_password"
+            android:inputType="numberPassword"
+            android:maxLength="16"
+            android:padding="15dip"
+            android:textColorHint="@color/txt_light_gray" />
+        <EditText
+            android:id="@+id/sign_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_margin="10dp"
+            android:background="@color/white1"
+            android:hint="手机号码"
+            android:inputType="number"
+            android:maxLength="16"
+            android:padding="15dip"
+            android:textColorHint="@color/txt_light_gray" />
+        <EditText
+            android:id="@+id/sign_email"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_margin="10dp"
+            android:background="@color/white1"
+            android:hint="邮箱"
+            android:inputType="textEmailAddress"
+            android:maxLength="16"
+            android:padding="15dip"
+            android:textColorHint="@color/txt_light_gray" />
+
+        <LinearLayout android:orientation="horizontal"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:completionThreshold="2"
+                android:id="@+id/sign_school"
+                android:layout_width="246dp"
+                android:layout_height="50dip"
+                android:background="@color/white1"
+                android:hint="学校"
+                android:inputType="textEmailAddress"
+                android:maxLength="16"
+                android:padding="15dip"
+                android:textColorHint="@color/txt_light_gray"
+                android:layout_margin="10dp"  />
+
+            <AutoCompleteTextView
+
+                android:id="@+id/atttv"
+                android:background="@color/white1"
+                android:hint="年级"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:completionThreshold="2"
+                android:padding="15dip"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="13dp"
+                />
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/button_margin"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginRight="@dimen/button_margin"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/shape_two"
+            android:text="@string/login_sign"
+            android:textColor="@color/txt_light_gray"
+            android:textSize="25.0sp"
+            android:id="@+id/sign_in_in" />
+
+    </TableLayout>
+</LinearLayout>

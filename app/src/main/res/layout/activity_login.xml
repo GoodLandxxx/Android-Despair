@@ -11,35 +11,35 @@
     <include layout="@layout/activity_bar_tittle_text"></include>
 
     <TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/user_name"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="50.0dip"
+        android:layout_marginTop="50.0dip"
+        android:background="@color/white1"
+        android:hint="邮箱／账号／手机号码"
+        android:inputType="none"
+        android:maxLength="8"
+        android:padding="15.0dip"
+        android:textColorHint="@color/txt_light_gray" />
 
-        <EditText
-            android:id="@+id/name"
-            android:layout_width="fill_parent"
-            android:layout_height="50.0dip"
-            android:layout_marginTop="50.0dip"
-            android:background="@color/white1"
-            android:hint="@string/login_login1"
-            android:inputType="none"
-            android:maxLength="8"
-            android:padding="15.0dip"
-            android:textColorHint="@color/txt_light_gray" />
+    <EditText
+        android:id="@+id/_password"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="2.0dip"
+        android:background="@color/white1"
+        android:hint="@string/login_password"
+        android:inputType="numberPassword"
 
-        <EditText
-            android:id="@+id/_password"
-            android:layout_width="fill_parent"
-            android:layout_height="50.0dip"
-            android:layout_marginTop="2.0dip"
-            android:background="@color/white1"
-            android:hint="@string/login_password"
-            android:inputType="numberPassword"
+        android:maxLength="16"
+        android:padding="15.0dip"
+        android:textColorHint="@color/txt_light_gray" />
 
-            android:maxLength="16"
-            android:padding="15.0dip"
-            android:textColorHint="@color/txt_light_gray" />
-
-        <TableLayout>
+    <TableLayout>
 
             <TableRow android:layout_marginTop="10.0dip"
                 tools:ignore="UselessParent">
@@ -60,6 +60,7 @@
         </TableLayout>
 
         <Button
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/button_margin"
@@ -68,20 +69,23 @@
             android:background="@drawable/shape_one"
             android:text="@string/login_"
             android:textColor="@color/white1"
-            android:textSize="25.0sp" />
+            android:textSize="25.0sp"
+            android:id="@+id/login_" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/button_margin"
-            android:layout_marginLeft="@dimen/button_margin"
-            android:layout_marginRight="@dimen/button_margin"
-            android:layout_marginTop="15.0dip"
-            android:background="@drawable/shape_two"
-            android:text="@string/login_sign"
-            android:textColor="@color/txt_light_gray"
-            android:textSize="25.0sp" />
     </TableLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/button_margin"
+        android:layout_marginLeft="@dimen/button_margin"
+        android:layout_marginRight="@dimen/button_margin"
+        android:layout_marginTop="15.0dip"
+        android:background="@drawable/shape_two"
+        android:text="@string/login_sign"
+        android:textColor="@color/txt_light_gray"
+        android:textSize="25.0sp"
+        android:id="@+id/sign_in" />
 
     <TextView
         android:id="@+id/lookaround"

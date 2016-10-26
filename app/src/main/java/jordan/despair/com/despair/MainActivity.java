@@ -40,6 +40,7 @@ public class MainActivity extends Activitytool implements RadioGroup.OnCheckedCh
         setContentView(R.layout.activity_main);
         bar = (TextView) findViewById(R.id.title_text);
         bar.setText(R.string.hot);
+
         bar.setBackgroundColor(Color.parseColor("#10000000"));//......
         rrrrrr = (RadioGroup) findViewById(R.id.rg___);
         mBBS = ((RadioButton) findViewById(R.id.rb_bbs));
@@ -138,6 +139,8 @@ public class MainActivity extends Activitytool implements RadioGroup.OnCheckedCh
                 break;
         }
     }
+
+
 }
 
 
