@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_my"
     android:layout_width="match_parent"
@@ -10,13 +11,18 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="jordan.despair.com.despair.MyselfActivity">
 
-    <TextView
-        android:textSize="100sp"
-        android:text="@string/myself"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="247dp"
-        android:id="@+id/textView3" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/hhh"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ke_facebook_profile"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
 </RelativeLayout>

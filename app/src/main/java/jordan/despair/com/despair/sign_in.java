@@ -24,7 +24,7 @@ public class sign_in extends AppCompatActivity {
     private SQLiteDatabase db;
 
     private AutoCompleteTextView attv;
-    private final String create_table = "Create  TABLE user ([user_name] varchar(8), [password] varchar(16) NOT NULL ,[phone] varchar(11) ,[email] varchar(20) ,[classs] int(1), [school] varchar(50),Primary Key(user_name) ) ";
+    private  String create_table = "Create  TABLE user ([user_name] varchar(8), [password] varchar(16) NOT NULL ,[isLogin] varchar(1),[phone] varchar(11) ,[email] varchar(20) ,[classs] int(1), [school] varchar(50),Primary Key(user_name) ) ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,10 +41,10 @@ public class sign_in extends AppCompatActivity {
         attv.setAdapter(arrayAdapter);
         thiss = jordan.despair.com.despair.sign_in.this;
         db = SqlProcess.openDB(thiss);
-//        try {
-//            db.execSQL(create_table);
-//        } catch (SQLException e) {
-//        }
+        try {
+            db.execSQL(create_table);
+        } catch (SQLException e) {
+        }
 //        final int classs = Integer.parseInt(((EditText) findViewById(R.id.atttv)).getText().toString());
         Button sign_in = (Button) findViewById(R.id.sign_in_in);
         sign_in.setOnClickListener(new View.OnClickListener() {

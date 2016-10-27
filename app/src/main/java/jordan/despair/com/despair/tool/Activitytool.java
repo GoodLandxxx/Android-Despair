@@ -24,5 +24,7 @@ public class Activitytool  extends AppCompatActivity {
     {
         Toast.makeText(context,string,Toast.LENGTH_SHORT).show();
     }
+
+
 }
 

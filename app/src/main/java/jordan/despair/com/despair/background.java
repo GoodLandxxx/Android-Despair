@@ -6,14 +6,17 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 
 import jordan.despair.com.despair.tool.Activitytool;
+import jordan.despair.com.despair.tool.isLogin;
 
 public class background extends Activitytool {
     private static final int WHAT_INTENT2LOGIN = 1;
     private static final int WHAT_INTENT2MAIN = 2;
     private static final long SPLASH_DUR_TIME = 1500;
+    private isLogin isLogin = new isLogin();
     private Handler handler = new Handler() {
 
         @Override
@@ -43,11 +46,13 @@ public class background extends Activitytool {
         setContentView(R.layout.activity_background);
     //        ImageView imageView = (ImageView) findViewById(R.id.imageView);
     //        imageView.setBackground(getResources().getDrawable(R.drawable.java));
-        if(false) //判断他是否登录
+
+        if(isLogin.isLogin(this)) //判断他是否登录
         {
             handler.sendEmptyMessageDelayed(WHAT_INTENT2MAIN, SPLASH_DUR_TIME);
         } else {
             handler.sendEmptyMessageDelayed(WHAT_INTENT2LOGIN, SPLASH_DUR_TIME);
         }
+        Log.d("ASDASDASD", String.valueOf(isLogin.isLogin(this)));
     }
 }

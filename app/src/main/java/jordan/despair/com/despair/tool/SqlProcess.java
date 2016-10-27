@@ -13,7 +13,7 @@ public class SqlProcess {
 
     public static SQLiteDatabase openDB(Context context) {
         db = SQLiteDatabase.openOrCreateDatabase(
-                context.getFilesDir().getPath()
+                context.getApplicationContext().getFilesDir().getPath()
                         + "/user.db3", null);
         return db;
     }
